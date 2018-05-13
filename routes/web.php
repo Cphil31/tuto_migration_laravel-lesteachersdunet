@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-	App\Events::create([
-			'name'=>'Super concert de saga love',
-			'description'=>'Super concert de mister Saga love',
-			'location'=>'Paris',
-			'price'=>20
-	]);
-	// $events = App\Event::all();
+	// App\Events::create([
+	// 		'name'=>'Super concert de Willem',
+	// 		'description'=>'Super concert de mister Willem',
+	// 		'location'=>'Marseille',
+	// 		'price'=>40
+	// ]);
+	$events = App\Events::all();
 
- //    return view('events.index')->withEvents($events);
+    return view('events.index')->withEvents($events);
 });
