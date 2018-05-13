@@ -13,10 +13,11 @@
 
 Route::get('/', function () {
 	// App\Events::create([
-	// 		'name'=>'Super concert de Willem',
-	// 		'description'=>'Super concert de mister Willem',
-	// 		'location'=>'Marseille',
-	// 		'price'=>40
+	// 		'name'=>'Super tuto ded teachers du net',
+	// 		'description'=>'sur youtube formatoin Laravel 5 -
+	// 		19',
+	// 		'location'=>'Toulouse',
+	// 		'price'=>0
 	// ]);
 	$events = App\Events::all();
 
